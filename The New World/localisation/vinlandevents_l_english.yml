@@ -1,9 +1,9 @@
 ﻿l_english:
  vinlandevents_1_title: "The Vinland Sagas"
- vinlandevents_1_desc: "Hundreds of years ago, brave explorer Leif Erikson discovered Vinland. After establishing a main base of operations, our ships, long ago, were destroyed, and many brave settlers were trapped. We've been stranded for many years, but it is finally time to branch out and throw off the chains of stagnation."
- vinlandevents_1_option1: "May Tyr guide us."
+ vinlandevents_1_desc: "Hundreds of years ago, the brave explorer Leif Erikson discovered Vinland. After establishing a main base of operations, our ships, long ago, were destroyed, and many brave settlers were trapped. We've been stranded for many years, with different Jarls rising and falling, failing to bring Vinland out of stagnation. The beloved Jarl Sven, living a long life, is now on his deathbed, however this represents a change greater than anyone could imagine. Tired of the years of stagnation, of struggling to survive, the vikings of Vinland are ready to throw off the chains of complacence. There are two powerful factions in the Vinlander ranks: one supports Sven's grandson and heir, and longs to conquer the rest of this strange land and forge a new empire. However, the opposing faction supports Sven's nephew, Ragnar. This faction desires to reestablish contact with the land we left behind so many years ago, and to forge a new empire."
+ vinlandevents_1_option1: "May Tyr guide us!"
  
- vinlandevents_2_title: "The Direction of Expansion"
- vinlandevents_2_desc:
- vinlandevents_2_option1: "We will expand towards the north."
- vinlandevents_2_option2: "The southeastern option seems the best."
+ vinlandevents_2_title: "The Death of Sven"
+ vinlandevents_2_desc: "A terrible day is upon us! The beloved Jarl, Sven, died in his sleep last night. As he sent out to sea on the funeral ship, there is now a moment of opportunity for great change in the leadership of Vinland."
+ vinlandevents_2_option1: "Ragnar deposes the young Jarl."
+ vinlandevents_2_option2: "Karl retains his power."

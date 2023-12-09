@@ -1,0 +1,130 @@
+vinland_rebirth = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	vinland_starting_mission = {
+		icon = mission_conquer_50_development
+		position = 1
+		
+		trigger = {
+			NOT = {
+				custom_trigger_tooltip {
+					tooltip = vinland_starting_mission_tooltip
+					has_ruler = "Sven"
+				}
+			}
+		}
+		
+		effect = {
+			
+		}
+	}
+}
+
+vinland_north_path = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = {
+			has_country_flag = vinland_north
+		}
+		
+	vinland_northern_expansion = {
+		icon = mission_conquer_50_development
+		position = 2
+		
+		required_missions = {
+			vinland_starting_mission
+		}
+		
+		trigger = {
+			AND = {
+				has_country_flag = vinland_north
+			}
+		}
+		
+		effect = {
+			980 = {
+				cede_province = VIN
+				add_core = VIN
+				add_province_modifier = {
+					name = vinland_settling
+					duration = 365
+				}	
+			}
+		}
+	}
+}
+
+vinland_southeast_path = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = {
+		has_country_flag = vinland_south
+	}
+		
+	vinland_southern_expansion = {
+		icon = mission_conquer_50_development
+		position = 2
+		
+		required_missions = {
+			vinland_starting_mission
+		}
+		
+		trigger = {
+			AND = {
+				custom_trigger_tooltip = {
+					tooltip = vinland_southern_tooltip
+					has_country_flag = vinland_south
+				}
+			}
+		}
+		effect = {
+			2573 = {
+				cede_province = VIN
+				add_core = VIN
+				add_province_modifier = {
+					name = vinland_settling
+					duration = 365
+				}
+			}
+		}
+	}
+	
+	vinland_chart_the_seas = {
+		icon = mission_conquer_50_development
+		position = 3
+		
+		required_missions = {
+			vinland_southern_expansion
+		}
+		
+		trigger = {
+			AND = {
+				num_of_galley = 5
+			}
+			NOT = {
+				980 = {
+					has_active_triggered_province_modifier = vinland_settling
+			}
+		}
+		
+		effect = {
+			set_country_flag = vinland_intial_exploration
+			VIN = {
+				kill_units = {
+					who = root
+					type = galley
+					amount = 5
+				}
+			}
+		}
+	}
+}

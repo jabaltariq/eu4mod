@@ -1,0 +1,21 @@
+vinland_base_government = {
+	icon = "settled_horde"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			tag = VIN
+			have_had_reform = vinland_base_government
+		}
+	}
+	trigger = {
+		OR = {
+			tag = VIN
+			have_had_reform = vinland_base_government
+		}
+	}
+	modifiers = {
+		prestige = -1
+		global_unrest = 2
+		governing_capacity_modifier = -0.80
+	}
+}

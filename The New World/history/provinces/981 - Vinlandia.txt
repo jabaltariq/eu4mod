@@ -1,0 +1,12 @@
+add_core = VIN
+owner = VIN
+culture = norwegian
+religion = norse_pagan_reformed
+capital = "Vinlandia"
+trade_goods = fish
+hre = no
+base_tax = 2
+base_production = 4
+base_manpower = 6
+discovered_by = north_american
+discovered_by = VIN
